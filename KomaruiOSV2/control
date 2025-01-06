@@ -1,8 +1,0 @@
-Package: com.komaru.arkpublic
-Name: komaru
-Depends: mobilesubstrate
-Version: 1
-Architecture: iphoneos-arm
-Description: Advanced Game Cheat for Ark Survival Evolved 
-Maintainer: Mercenary Developer Team
-Author: Mercenary Developer Team
