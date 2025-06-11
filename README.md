@@ -2,6 +2,9 @@
 
 iOS theos project, ArkKomaru  
 
-Ark: Survival evolved ultimate edition modification  
+Ark: Ultimate Mobile Edition Modification
+
+-- (OUTDATED)
+
 
 https://theos.dev
