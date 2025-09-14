@@ -35,12 +35,6 @@
 #define SCREEN_SCALE [UIScreen mainScreen].scale
 #define timer(sec) dispatch_after(dispatch_time(DISPATCH_TIME_NOW, sec * NSEC_PER_SEC), dispatch_get_main_queue(), ^
 
-extern MenuInteraction* menuTouchView;
-extern UIButton* InvisibleMenuButton;
-extern UIButton* VisibleMenuButton;
-extern UITextField* hideRecordTextfield;
-extern UIView* hideRecordView;
-extern ImFont* Font;
 
 struct GlobalVariables
 {
@@ -83,7 +77,6 @@ struct GlobalVariables
         }
     }
 
-    ImFont* Font;
     ImVec2 MenuSize   = ImVec2(0, 0);
     ImVec2 MenuOrigin = ImVec2(0, 0);
 
