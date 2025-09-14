@@ -34,7 +34,7 @@ static bool MenDeal = true;
 
     ImFontConfig config;
     config.FontDataOwnedByAtlas = false;
-    Font = io.Fonts->AddFontFromMemoryCompressedBase85TTF(CurvyBase85, 40.f, &config, io.Fonts->GetGlyphRangesChineseFull());
+    [MenuLoad sharedInstance].font = io.Fonts->AddFontFromMemoryCompressedBase85TTF(CurvyBase85, 40.f, &config, io.Fonts->GetGlyphRangesChineseFull());
 
     ImGui_ImplMetal_Init(_device);
     
@@ -115,7 +115,7 @@ static bool MenDeal = true;
 
 - (void)drawInMTKView:(MTKView*)view
 {
-    hideRecordTextfield.secureTextEntry = Variables.StreamerMode; //imgui streamer mode
+    [MenuLoad sharedInstance].hideRecordTextfield.secureTextEntry = Variables.StreamerMode; // imgui streamer mode
 
     ImGuiIO& io = ImGui::GetIO();
     io.DisplaySize.x = view.bounds.size.width;
@@ -130,12 +130,12 @@ static bool MenDeal = true;
     if (MenDeal) {
         [self.view setUserInteractionEnabled:YES];
         [self.view.superview setUserInteractionEnabled:YES];
-        [menuTouchView setUserInteractionEnabled:YES];
+        [[MenuLoad sharedInstance].menuTouchView setUserInteractionEnabled:YES];
     }
     else {
         [self.view setUserInteractionEnabled:NO];
         [self.view.superview setUserInteractionEnabled:NO];
-        [menuTouchView setUserInteractionEnabled:NO];
+        [[MenuLoad sharedInstance].menuTouchView setUserInteractionEnabled:NO];
     }
     
     MTLRenderPassDescriptor* renderPassDescriptor = view.currentRenderPassDescriptor;
