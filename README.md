@@ -1,10 +1,10 @@
-# ArkKomaru
+# Ark: Ultimate Mobile Edition Modification
 
-iOS theos project, ArkKomaru  
+iOS mod menu, rendering with dear imgui and unreal engine 4.26. Built with THEOS as a dylib, works with ark version 1.89
 
-Ark: Ultimate Mobile Edition Modification
-
--- (OUTDATED)
+2025 Detected 
+* CURRENTLY OUTDATED (not working)
+- Server side detection makes multiplayer Impossible as game will crash if injecting a dylib for side loading or jailbreak.
 
 
 https://theos.dev
