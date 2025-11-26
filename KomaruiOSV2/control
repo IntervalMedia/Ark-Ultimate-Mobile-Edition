@@ -1,8 +1,8 @@
-Package: com.komaru.arkpublic
-Name: komaru
+Package: com.arkuse.arkpublic
+Name: ArkEditor
 Depends: mobilesubstrate
-Version: 1
+Version: 1.01
 Architecture: iphoneos-arm
-Description: Advanced Game Cheat for Ark Survival Evolved 
-Maintainer: Mercenary Developer Team
-Author: Mercenary Developer Team
+Description: Offline Menu for Ark Survival Evolved Ultimate Mobile Edition
+Maintainer: IntervalMedia
+Author: IntervalMedia
